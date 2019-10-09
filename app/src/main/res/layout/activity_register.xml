@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amr.shop.View.RegisterActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/linearLayout">
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="name"/>
+
+    <EditText
+        android:id="@+id/ed_pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="password"/>
+
+    <EditText
+        android:id="@+id/ed_phone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="phone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:onClick="btn_register"/>
+
+    <Button
+        android:id="@+id/btn_go_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:onClick="go_login"
+        android:text="go_login" />
+</LinearLayout>
+
+
+
+</RelativeLayout>
